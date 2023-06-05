@@ -1,0 +1,23 @@
+ALGORITHM algo1
+VAR
+    str : STRING := "hello world"
+    c : CHAR := ""
+    nb_CHAR : INTEGER := 0
+    nb_word : INTEGER := 0
+    nb_vow :  INTEGER := 0
+
+BEGIN
+    WHILE (c <> ".")) DO
+        Read (c)
+        nb char := nb char + 1
+        IF (c = "a" OR c = "e" OR c = "i" OR c = "o" OR c = "u") THEN
+            nb_vow := nb_vow + 1
+        END_IF
+        IF (c = " ") THEN
+            nb_word := nb_word +  1
+        END_IF
+    END_WHILE
+    Write("number of characters" , nb_CHAR + 1)
+    Write("number of vowels", nb_vow + 1)
+    Write("number of words", nb_word + 1 )
+END
